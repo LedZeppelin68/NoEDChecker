@@ -4,3 +4,9 @@ H:\recent progs\NoEDChecker\NoEDChecker\bin\Debug\NoEDChecker.pdb
 H:\recent progs\NoEDChecker\NoEDChecker\obj\Debug\NoEDChecker.csprojResolveAssemblyReference.cache
 H:\recent progs\NoEDChecker\NoEDChecker\obj\Debug\NoEDChecker.exe
 H:\recent progs\NoEDChecker\NoEDChecker\obj\Debug\NoEDChecker.pdb
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\bin\Debug\NoEDChecker.exe.config
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\bin\Debug\NoEDChecker.exe
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\bin\Debug\NoEDChecker.pdb
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\obj\Debug\NoEDChecker.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\obj\Debug\NoEDChecker.exe
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\obj\Debug\NoEDChecker.pdb

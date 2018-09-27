@@ -74,13 +74,14 @@ namespace NoEDChecker
 
                     List<string> log = new List<string>();
 
+                    log.Add(string.Format("\"{0}\" recommendations:", image_name));
                     if (!sync) log.Add("incorrect sync");
                     if (!msf) log.Add("incorrect MSF");
                     if (!error) log.Add("probably, sector must contain a \"Mastering error\"");
+                    log.Add(string.Empty);
 
-                    if (log.Count > 0)
+                    if (log.Count > 2)
                     {
-                        log.Insert(0, string.Format("\"{0}\" recommendations:", image_name));
                         File.AppendAllLines("noedc.log", log);
                     }
                 }

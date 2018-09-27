@@ -1,0 +1,5 @@
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\bin\Release\NoEDChecker.exe.config
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\bin\Release\NoEDChecker.exe
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\bin\Release\NoEDChecker.pdb
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\obj\Release\NoEDChecker.exe
+C:\Users\Андрей\Documents\Visual Studio 2017\Projects\NoEDChecker\NoEDChecker\obj\Release\NoEDChecker.pdb
