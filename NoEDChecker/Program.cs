@@ -90,13 +90,11 @@ namespace NoEDChecker
 
         private static bool CheckError(byte[] last_sector, long offset)
         {
-            bool error = false;
-
             byte[] reference_sector = GenerateReferenceSector(offset);
 
-            if (last_sector.SequenceEqual(reference_sector)) error = true;
+            if (last_sector.SequenceEqual(reference_sector)) return true;
 
-            return error;
+            return false;
         }
 
         private static byte[] GenerateReferenceSector(long offset)
@@ -130,52 +128,31 @@ namespace NoEDChecker
 
         private static bool CheckForm2(byte[] last_sector)
         {
-            bool form2 = true;
-
             for (int i = 0; i < 8; i++)
             {
-                if (DefaultForm2Header[i] != last_sector[i + 16])
-                {
-                    form2 = false;
-                    break;
-                }
+                if (DefaultForm2Header[i] != last_sector[i + 16]) return false;
             }
-
-            return form2;
+            return true;
         }
 
         private static bool CheckBlank(byte[] last_sector)
         {
-            bool blank = true;
-
             for (int i = 16; i < 2352; i++)
             {
-                if (last_sector[i] != 0)
-                {
-                    blank = false;
-                    break;
-                }
+                if (last_sector[i] != 0) return false;
             }
-
-            return blank;
+            return true;
         }
 
         private static bool CheckMSF(byte[] lastsector, long offset)
         {
-            bool msf = true;
-
             byte[] msf_from_offset = Offset2MSF(offset);
 
             for (int i = 0; i < 4; i++)
             {
-                if (msf_from_offset[i] != lastsector[i + 12])
-                {
-                    msf = false;
-                    break;
-                }
+                if (msf_from_offset[i] != lastsector[i + 12]) return false;
             }
-
-            return msf;
+            return true;
         }
 
         private static byte[] Offset2MSF(long offset)
@@ -192,18 +169,11 @@ namespace NoEDChecker
 
         private static bool CheckSync(byte[] last_sector)
         {
-            bool sync = true;
-
             for (int i = 0; i < 12; i++)
             {
-                if (last_sector[i] != Sync[i])
-                {
-                    sync = false;
-                    break;
-                }
+                if (last_sector[i] != Sync[i]) return false;
             }
-
-            return sync;
+            return true;
         }
 
         private static bool CheckSize(BinaryReader Reader)
@@ -221,7 +191,6 @@ namespace NoEDChecker
 
             Reader.BaseStream.Seek(2348, SeekOrigin.Current);
             if (Reader.ReadInt32() != 0) return true;
-
             return false;
         }
 
