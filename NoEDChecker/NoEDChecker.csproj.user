@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>"E:\temp\MLB 99 %28USA%29\Tomb Raider %28Europe%29\Tomb Raider %28Europe%29 %28Track 01%29.bin"</StartArguments>
+  </PropertyGroup>
+</Project>
